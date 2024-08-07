@@ -1,0 +1,72 @@
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.logo {
+    width: 23%;
+    padding: 1%;
+}
+
+header {
+    background-color: #F1F1EA;
+}
+
+nav {
+    width: 73%;
+    padding: 1%;
+}
+
+ul {
+    width: 50%;
+    margin-left:auto;
+    font-family: "Epilogue", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.logo {
+    text-align: center;
+}
+
+.heroImg {
+    height: 600px;
+    padding: 25px;
+}
+
+section {
+    background-color: #4B755F;
+}
+
+.content {
+    width: 500px;
+    margin: 0 auto;
+    color: #F1F1EA;
+    font-family: "Epilogue", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+footer {
+   background-color: #373738;
+}
+
+ul {
+    padding: 20px;
+}
+
+li {
+    padding: 2px;
+}
+
+button {
+    height: 20px;
+    background-color:#F1F1EA;
+    color: #373738;
+}
+
+footer ul {
+    color: #F1F1EA;
+}
