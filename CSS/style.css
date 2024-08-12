@@ -165,3 +165,19 @@ button {
 footer ul {
     color: #F1F1EA;
 }
+
+@media only screen and (max-width: 600px) {
+    .flexContainer {
+        flex-direction: column;
+        width: 100%;
+    }
+    .workGrid {
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "topLeft"
+        "bottomLeft"
+        "topRight"
+        "bottomRight";
+    }
+}
