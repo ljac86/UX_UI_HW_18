@@ -123,6 +123,29 @@ h4 {
     padding: 25px;
     color:#F1F1EA;
 }
+@media only screen and (max-width: 600px) {
+    .flexContainer {
+        flex-direction: column;
+        width: 100%;
+    }
+    .workGrid {
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "topLeft"
+        "bottomLeft"
+        "topRight"
+        "bottomRight";
+    }
+
+    .sanctuaryPics, .sanctPicTwo {
+        width:25%;
+    }
+    
+    .sanctuaryPics, .sanctPicOne {
+        width: 80%;
+    }
+}
 
 .myWork p {
     width: 75%;
@@ -164,20 +187,4 @@ button {
 
 footer ul {
     color: #F1F1EA;
-}
-
-@media only screen and (max-width: 600px) {
-    .flexContainer {
-        flex-direction: column;
-        width: 100%;
-    }
-    .workGrid {
-        grid-template-rows: 25% 25% 25% 25%;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "topLeft"
-        "bottomLeft"
-        "topRight"
-        "bottomRight";
-    }
 }
