@@ -59,9 +59,37 @@ ul {
 }
 
 .workGrid {
+    margin: 0px 15%;
     display: grid;
-
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "topLeft topRight"
+    "bottomLeft bottomRight";
 }
+
+.travelPics {
+    grid-area: topLeft;
+    padding-bottom: 100px;
+}
+
+.sanctuaryPics {
+    grid-area: topRight;
+    padding-bottom: 100px;
+}
+
+.travelText {
+    grid-area: bottomLeft;
+}
+
+.sanctuaryText {
+    grid-area: bottomRight;
+}
+
+.travelPics img {
+    width: 150px;
+}
+
 .mySkills {
     background-color: #EEB070;
     font-family: "Epilogue", sans-serif;
@@ -77,6 +105,13 @@ ul {
 
 h1 {
     text-align: center;
+    font-family: "Noticia Text", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h4 {
+    padding: 10px;
 }
 
 .myWork {
@@ -90,12 +125,22 @@ h1 {
 }
 
 .myWork p {
-    width: 33%;
+    width: 75%;
     align-content: center;
+}
+
+.sanctuaryText p {
+    padding-bottom: 21px;
+}
+
+h3 {
+    text-align: right;
+    text-decoration: underline;
 }
 
 footer {
    background-color: #373738;
+   padding: 1px;
 }
 
 ul {
@@ -103,13 +148,18 @@ ul {
 }
 
 li {
-    padding: 2px;
+    padding: 5px;
 }
 
 button {
-    height: 20px;
+    height: 40px;
+    width: auto;
     background-color:#F1F1EA;
     color: #373738;
+    font-family: "Epilogue", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 footer ul {
