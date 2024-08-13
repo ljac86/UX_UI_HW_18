@@ -59,7 +59,8 @@ ul {
 }
 
 .workGrid {
-    margin: 0px 15%;
+    margin: auto;
+    max-width: 60%;
     display: grid;
     grid-template-rows: 50% 50%;
     grid-template-columns: 50% 50%;
@@ -122,29 +123,18 @@ h4 {
     font-style: normal;
     padding: 25px;
     color:#F1F1EA;
+    margin: auto;
 }
-@media only screen and (max-width: 600px) {
-    .flexContainer {
-        flex-direction: column;
-        width: 100%;
-    }
-    .workGrid {
-        grid-template-rows: 25% 25% 25% 25%;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "topLeft"
-        "bottomLeft"
-        "topRight"
-        "bottomRight";
-    }
 
-    .sanctuaryPics, .sanctPicTwo {
-        width:25%;
-    }
-    
-    .sanctuaryPics, .sanctPicOne {
-        width: 80%;
-    }
+.myWork img {
+    width: auto;
+    height: auto;
+}
+
+.sanctuaryPics .sanctPicOne {
+    width: auto;
+    height: auto;
+    align-content: center;
 }
 
 .myWork p {
@@ -153,7 +143,7 @@ h4 {
 }
 
 .sanctuaryText p {
-    padding-bottom: 21px;
+    padding-bottom: auto;
 }
 
 h3 {
@@ -167,7 +157,9 @@ footer {
 }
 
 ul {
-    padding: 20px;
+    padding: 15px;
+    margin: auto;
+    text-align: center;
 }
 
 li {
@@ -187,4 +179,21 @@ button {
 
 footer ul {
     color: #F1F1EA;
+}
+
+@media only screen and (max-width: 600px) {
+    .flexContainer {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .workGrid {
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "topLeft"
+        "bottomLeft"
+        "topRight"
+        "bottomRight";
+    }
 }
